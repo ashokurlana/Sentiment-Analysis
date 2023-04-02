@@ -90,10 +90,12 @@ def main():
     )
     # train a model with specified arguments
     trainer.train()
+    trainer.save_model()
+    trainer.save_state()
     # to predict and return the class/label with the highest score
     pipe = TextClassificationPipeline(model=model, tokenizer=tokenizer)
     # print the outputs on the evaluation dataset
-    model.save_pretrained(args.mod)
+    # model.save_pretrained(args.mod)
     print('Training Done')
     predictions = pipe(test_dataset['sentence'])
     # the below code is to save the most recent model
