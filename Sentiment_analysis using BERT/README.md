@@ -10,3 +10,5 @@ python3 sentiment_analysis_of_movie_reviews_using_BERT.py --train train.csv --te
 ```
 python3 predict_sentiments_using_huggingface_saved_model.py --model bert-base-uncased/ --test test.csv --output predictions.txt
 ```
+## Fine-tuned BERT model path
+https://drive.google.com/file/d/19PYGGyGxw-tmdvTbUqEA1H3wPQqjXIrl/view?usp=sharing
